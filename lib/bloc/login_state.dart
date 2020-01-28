@@ -1,0 +1,12 @@
+abstract class LoginState {}
+
+class LoginInitial extends LoginState {}
+
+class LoginFailure extends LoginState {
+
+  final String errorMessage;
+
+  LoginFailure(this.errorMessage);
+}
+
+class LoginSuccess extends LoginState {}
